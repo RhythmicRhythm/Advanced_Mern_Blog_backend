@@ -119,6 +119,10 @@ server.post("/signin", (req, res) => {
     });
 });
 
+server.post("/", (req, res) => {
+  console.log(req.body);
+})
+
 server.listen(PORT, () => {
   console.log("server running on port --> " + PORT);
 });
